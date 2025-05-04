@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Netflix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Minha Netflix</div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="search-link">Localizar</a></li>
+                <li><a href="#" id="movies-link">Filmes</a></li>
+                <li><a href="#" id="series-link">Séries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- busca -->
+    <section class="search-container" id="search-container">
+        <input type="text" id="search-input" placeholder="Buscar filmes e séries...">
+        <div class="search-results" id="search-results"></div>
+    </section>
+
+    <section class="main-content">
+        <h1>Catálogo</h1>
+        <h2 id="category-title"></h2>
+        <div class="movies-container" id="movies-container">
+            <!-- Filmes/Séries serão carregados aqui -->
+        </div>
+    </section>
+
+    <div class="movie-details" id="movie-details">
+        <h2 id="movie-title"></h2>
+        <p id="movie-overview"></p>
+        <button id="close-details">Fechar</button>
+        <div class="trailer-container" id="trailer-container">
+            <iframe id="trailer-video" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
